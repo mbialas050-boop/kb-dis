@@ -15,7 +15,7 @@ public final class KnockbackCommands {
             Commands.CommandSelection environment) {
 
         dispatcher.register(Commands.literal("kb")
-            .requires(source -> source.hasPermission(2))
+            .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
             .then(Commands.literal("status")
                 .executes(context -> {
                     context.getSource().sendSuccess(() -> Component.literal(
