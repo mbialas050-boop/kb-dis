@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "KB Control",
   "description": "Server-side knockback configuration management for administrators.",
-  "environment": "server",
+"environment": "*"
   "entrypoints": {
     "main": [
       "com.carter.kb.KnockbackMod"
