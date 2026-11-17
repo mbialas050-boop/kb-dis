@@ -13,8 +13,6 @@ public final class KnockbackCommands {
             com.mojang.brigadier.CommandDispatcher<CommandSourceStack> dispatcher,
             net.minecraft.commands.CommandBuildContext registryAccess,
             Commands.CommandSelection environment) {
-
-        dispatcher.register(Commands.literal("kb")
             dispatcher.register(Commands.literal("kb")
         .then(Commands.literal("status")
             .then(Commands.literal("status")
