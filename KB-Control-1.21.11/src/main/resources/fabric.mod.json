@@ -4,12 +4,15 @@
   "version": "${version}",
   "name": "KB Control",
   "description": "Server-side knockback configuration management for administrators.",
-"environment": "*"
+  "environment": "*",
   "entrypoints": {
     "main": [
       "com.carter.kb.KnockbackMod"
     ]
   },
+  "mixins": [
+    "kb_control.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.18.0",
     "minecraft": "~1.21.11",
