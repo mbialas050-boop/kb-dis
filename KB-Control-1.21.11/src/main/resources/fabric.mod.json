@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "kb_control",
+  "version": "${version}",
+  "name": "KB Control",
+  "description": "Server-side knockback configuration management for administrators.",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.carter.kb.KnockbackMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
